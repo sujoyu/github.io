@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	font-family: 'Kiwi Maru', serif;
+	color: #362c2b;
+	min-height: 100vh;
+	height: 100%;
+	background: antiquewhite;
+	filter: contrast(250%) brightness(100%);
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(calc(24deg + 180deg), transparent, #60938f) left 0 top 0 / cover,
+			url(/imgs/noise.svg) repeat left 0 top 0 / 200px 200px;
+		z-index: -1;
+	}
+
+	a {
+		color: rgb(36, 114, 107);
+	}
+}
