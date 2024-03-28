@@ -3,7 +3,7 @@
 	<main>
 		<slot />
 	</main>
-	<footer />
+	<footer>©️ motoki</footer>
 </div>
 
 <style lang="scss">
@@ -18,6 +18,13 @@
 			width: 100vw;
 			max-width: 100vw;
 			overflow: hidden;
+		}
+
+		footer {
+			border-top: 1px solid #ffffff22;
+			background: #ffffff22;
+			padding: 1rem;
+			text-align: center;
 		}
 	}
 </style>

@@ -10,17 +10,29 @@
 	let effects = false;
 </script>
 
-<Container><h1>すじょうゆのポートフォリオ</h1></Container>
+<Container><h1>モトキのポートフォリオ</h1></Container>
 
 <Container>
-	<ul>
-		<li><a href="https://konotan.sujoyu.com/home">この短冊に願いを</a></li>
+	<ul class="list">
+		<li>
+			SNSアカウント: <a href="https://twitter.com/hypermotoki" target="_blank" rel="noreferrer"
+				>Twitter@hypermotoki</a
+			>
+		</li>
+		<li>
+			<a href="https://konotan.sujoyu.com/home" target="_blank" rel="noreferrer">この短冊に願いを</a
+			>
+			<p>シンプルな縦書きマインドマップツールです</p>
+		</li>
 	</ul>
 </Container>
 
 <Container>
-	<ul>
-		<li><a href="#effects" on:click={() => (effects = !effects)}>エフェクトたち</a></li>
+	<ul class="list">
+		<li>
+			<a href="#effects" on:click={() => (effects = !effects)}>エフェクトたち</a>
+			<p>JS, CSSで作ったエフェクトたち</p>
+		</li>
 	</ul>
 </Container>
 
@@ -70,6 +82,7 @@
 	ul {
 		li {
 			font-size: 14px;
+			margin: 1rem 0;
 			.title {
 				display: inline-block;
 				font-size: 16px;
@@ -81,8 +94,23 @@
 				margin: 2rem 0;
 				display: flex;
 				justify-content: center;
+			}
+		}
 
-				.center-margin {
+		&.list {
+			li {
+				position: relative;
+				padding-left: 22px;
+				&::before {
+					content: '';
+					position: absolute;
+					top: 4px;
+					left: 0;
+					display: block;
+					width: 14px;
+					height: 14px;
+					margin-right: 8px;
+					background: white;
 				}
 			}
 		}
