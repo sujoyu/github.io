@@ -14,15 +14,16 @@
 
 		main {
 			flex: 1;
-			padding: 1rem 0;
-			width: 100vw;
-			max-width: 100vw;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			max-width: 100%;
 			overflow: hidden;
 		}
 
 		footer {
-			border-top: 1px solid #ffffff22;
-			background: #ffffff22;
+			border-top: 1px solid #ffffff88;
+			background: #ffffff;
 			padding: 1rem;
 			text-align: center;
 		}
